@@ -1,0 +1,217 @@
+/*
+ *重置 reset
+ */
+
+/*//https://www.cnblogs.com/Likebard/p/7008175.html/*/
+/*//https://www.imooc.com/article/19011*/
+/*// 总结那些有默认margin,padding值的html标签（有些不是很准确）*/
+/* 默认有边距，都要清除 */
+body, dl, dd, ol, ul, h1, h2, h3, h4, h5, h6, p, form, textarea{ margin:0;}
+ol,ul{
+  padding:0;
+  list-style: none;
+}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+  /*字体设置*/
+  font-size: 14px;
+  font-family: "Microsoft Yahei",sans-serif;
+  color: #333;
+  /* 默认鼠标 */
+  cursor: default;
+}
+
+/*可选*/
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+/*行内块元素*/
+input,img{
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  outline-style: none;
+  vertical-align: bottom;
+}
+
+/*行内元素*/
+a,a:active,a:visited{
+  /*下划线和颜色*/
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover{
+  color:#555;
+}
+
+textarea{
+  /* 边框清零 */
+  border:none;
+  /* 轮廓线清零 */
+  outline: none;
+  /* 防止文本域被随意拖拽 */
+  resize: none;
+}
+
+i{
+  /*文字样式*/
+  font-style: normal;
+}
+strong,em{font-style:normal;font-weight:bold;}
+table{
+  /*边框合并*/
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/*
+ *布局
+ */
+.g-doc{}/*文档doc*/
+.g-hd{}/*头部head*/
+.g-bd{}/*主体body*/
+.g-foot{}/*尾部foot*/
+.g-main{}/*主栏main*/
+.g-mainsub{}/*主栏子容器mainc*/
+.g-side{}/*侧栏side*/
+.g-sidesub{}/*侧栏子容器*/
+.g-wrap, .g-box{}/*盒容器*/
+/*
+ *模块
+ */
+.m-nav{}/*导航*/
+.m-subnav{}/*子导航subnav*/
+.m-menu{}/*菜单*/
+.m-tab{}/*选项卡*/
+.m-head, .m-tt{}/*标题区head*/
+.m-head-top {}/*标题区上部head*/
+.m-head-mid {}/*标题区中部head*/
+.m-head-bot {}/*标题区下部head*/
+.m-cate {} /*分类category*/
+.m-bd, .m-ct{}/*内容区body/content*/
+.m-list{}/*列表list*/
+.m-table{}/*表格table*/
+.m-form{}/*表单form*/
+.m-hot{}/*热点*/
+.m-top{}/*排行*/
+.m-log{}/*登录login*/
+.m-logo{}/*标志*/
+.m-ads{}/*广告advertise*/
+.m-search{}/*搜索search*/
+.m-slide{}/*幻灯slide*/
+.m-tips{}/*提示*/
+.m-help{}/*帮助*/
+.m-news{}/*新闻*/
+.m-article{}/*文章*/
+.m-download{}/*下载download*/
+.m-register{}/*注册register*/
+.m-vote{}/*投票*/
+.m-copyright{}/*版权copyright*/
+.m-rst{}/*结果rst*/
+/*
+ *元件 util
+ */
+.u-title{}/*标题*/
+.u-btn{}/*按钮*/
+.u-input{}/*输入*/
+.u-crumb{}/*面包屑crumb*/
+/*
+ *功能 function
+ */
+.f-clearfix{zoom:1;}/*清除浮动clearboth*/
+.f-clearfix:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f-fl{float:left;}/*向左浮动floatleft*/
+.f-fr{float:right;}/*向右浮动floatright*/
+.f-ib{display:inline-block;*display:inline;*zoom:1;}/*内联块级inlineblock*/
+.f-tc{text-align:center;}/*文本居中textaligncenter*/
+.f-tr{text-align:right;}/*文本居右textalignright*/
+.f-tl{text-align:left;}/*文本居左textalignleft*/
+.f-tj{text-align:justify;text-justify:inter-ideograph;}/*两端对齐*/
+.f-vm{vertical-align:middle;}/*垂直居中verticalalignmiddle*/
+.f-hidden{overflow:hidden;}/*溢出隐藏overflowhidden*/
+.f-none{display:none;}/*完全消失displaynone*/
+.f-block{display:block;}
+.f-pr{position:relative;}/*相对定位*/
+.f-prz{position:relative;zoom:1;}
+.f-fs{}/*字体大小fontsize*/
+.f-fs12{font-size:12px;}
+.f-fs14{font-size:14px;}
+.f-fw{}/*字体粗细fontweight*/
+.f-fwn{font-weight:normal;}
+.f-fwb{font-weight:bold;}
+.f-wsn{word-wrap:normal;white-space:nowrap;}/*一行内强制显示*/
+.f-pre{overflow:hidden;text-align:left;white-space:pre-wrap;word-wrap:break-word;word-break:break-all;}/*保留空白换行*/
+.f-wwb{white-space:normal;word-wrap:break-word;word-break:break-all;}/*强制换行*/
+.f-ellipsis{overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;}/*文本超出部分省略*/
+.f-tdu,.f-tdu:hover{text-decoration:underline;}/*下划线有*/
+.f-tdn,.f-tdn:hover{text-decoration:none;}/*下划线无*/
+.f-csp{cursor:pointer;}/*鼠标样式*/
+.f-csd{cursor:default;}
+.f-csh{cursor:help;}
+.f-csm{cursor:move;}
+/*
+ *皮肤skin
+ */
+.s-fc{}/*字体颜色fontcolor*/
+.s-bg{}/*背景background*/
+.s-bgc{}/*背景颜色backgroundcolor*/
+.s-bgi{}/*背景图片backgroundimage*/
+.s-bgp{}/*背景定位backgroundposition*/
+.s-bdc{}/*边框颜色bordercolor*/
+/*
+ *状态 zhuangtai
+ */
+.z-selected{}/*选中selected*/
+.z-current{}/*当前current*/
+.z-show{}/*显示*/
+.z-hide{}/*隐藏*/
+.z-open{}/*打开*/
+.z-close{}/*关闭*/
+.z-error{}/*出错error*/
+.z-disabled{}/*不可用disabled*/
+
+/*
+ *媒体查询
+ */
+@media screen and (orientation:landscape){/* 横屏 */
+
+}
+@media screen and (orientation:portrait){/* 竖屏 */
+
+}
+@media screen and (max-width:959px){/* 窗口宽度<960,设计宽度=768 */
+
+}
+@media screen and (max-width:767px){/* 窗口宽度<768,设计宽度=640 */
+
+}
+@media screen and (max-width:639px){/* 窗口宽度<640,设计宽度=480 */
+
+}
+@media screen and (max-width:479px){/* 窗口宽度<480,设计宽度=320 */
+
+}
+
+
+/*
+ *动画
+ */
+.a-fadein{-webkit-animation-name:fadein;-moz-animation-name:fadein;-ms-animation-name:fadein;animation-name:fadein;}/* 淡入 */
+@-webkit-keyframes fadein{/* 淡入 */
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+@-moz-keyframes fadein{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+@-ms-keyframes fadein{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+@keyframes fadein{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
